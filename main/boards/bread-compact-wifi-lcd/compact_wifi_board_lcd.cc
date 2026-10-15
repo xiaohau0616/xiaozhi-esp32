@@ -146,7 +146,7 @@ public:
         InitializeButtons();
         InitializeTools();
         if (DISPLAY_BACKLIGHT_PIN != GPIO_NUM_NC) {
-            GetBacklight()->RestoreBrightness();
+            GetBacklight()->SetBrightness(100, false);
         }
         
     }
